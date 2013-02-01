@@ -1,11 +1,10 @@
 {
-    "name": "react/react",
-    "description": "Nuclear Reactor written in PHP.",
+    "name": "react-with-mouse",
+    "description": "Nuclear reactor with a mouse.",
     "keywords": ["event-loop", "reactor"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/reactphp/react/issues",
-        "irc": "irc://irc.freenode.org/reactphp"
+        "issues": "https://github.com/reactphp/react/issues"
     },
     "require": {
         "php": ">=5.3.3",

@@ -1,22 +1,22 @@
-# React
+[![mouse](http://labs.gurron.com/trove/react-with-mouse.png)](https://github.com/ulpmori/react-with-mouse/)
+=====
 
-Event-driven, non-blocking I/O with PHP.
 
-[![Build Status](https://secure.travis-ci.org/reactphp/react.png?branch=master)](http://travis-ci.org/reactphp/react)
+# React with mouse
 
-## Install
+Event-driven, non-blocking I/O with the mouse framework.
 
-The recommended way to install react is [through composer](http://getcomposer.org).
-
-```JSON
-{
-    "require": {
-        "react/react": "0.2.*"
-    }
-}
-```
+This is still at a very experimental stage and should not be used for production 
+in any way.
 
 ## What is it?
+
+mouse is a web development framework designed to be lightweight, simple to use 
+and provide a cleaner codebase. Routing has a structures system with the ability 
+of mapping custom urls. Whiskers.json app information that simplifies packaging 
+and app control. Its base is in PHP with an option of using templating 
+for a narrow cleaner coding syntax. It also includes jquery and bootstrap and 
+could support further front-end libraries.
 
 React is a low-level library for event-driven programming in PHP. At its core
 is an event loop, on top of which it  provides low-level utilities, such as:
@@ -28,23 +28,12 @@ The event loop is based on the reactor pattern (hence the name) and strongly
 inspired by libraries such as EventMachine (Ruby), Twisted (Python) and
 Node.js (V8).
 
-## Design goals
-
-* Usable with a bare minimum of PHP extensions, add more extensions to get better performance.
-* Provide a standalone event-loop component that can be re-used by other libraries.
-* Decouple parts so they can be replaced by alternate implementations.
-
-React is non-blocking by default. Use workers for blocking I/O.
-
 ## Usage
 
-### Events
-
-Most classes extend
-[événement](https://github.com/igorw/evenement), allowing you to bind to
-events.
-
 ### Example
+
+The example below is for a simple HTTP server with react alone, quickstarts and 
+tutorials will be provided soon.
 
 Here is an example of a simple HTTP server listening on port 1337:
 ```php
@@ -71,10 +60,6 @@ $http->on('request', $app);
 $socket->listen(1337);
 $loop->run();
 ```
-
-## Community
-
-Check out #reactphp on irc.freenode.net. Also follow [@reactphp](https://twitter.com/#!/reactphp) on twitter.
 
 ## Tests
 
